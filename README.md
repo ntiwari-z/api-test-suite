@@ -1,28 +1,10 @@
-# xunit-shield
-
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/zentrumhub/common/xunit-shield.git
-git branch -M main
-git push -uf origin main
-```
+# api-test-suite
 
 ## Name
-XUnit Test Suite
+API Test Suite
 
 ## Description
-Welcome to the xUnit Test Suite repository! This repository contains a comprehensive suite of tests using the xUnit testing framework, integrated with Allure for enhanced reporting capabilities. These tests cover various aspects of our application, helping us identify and address potential issues early in the development process.
+Welcome to the Api Test Suite repository! This repository contains a comprehensive suite of tests using the xUnit testing framework, integrated with Allure for enhanced reporting capabilities. These tests cover various aspects of our application, helping us identify and address potential issues early in the development process.
 
 ## Prerequisites
 - [ ] [Docker](https://docs.docker.com/get-docker/)
