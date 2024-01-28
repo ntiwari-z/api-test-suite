@@ -1,4 +1,4 @@
-name: ci
+name: Push to Docker then pull
 
 on:
   push:
@@ -36,3 +36,14 @@ jobs:
           push: true
           target: final
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+  notify:
+    needs: build
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+      credentials:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+    steps:
+      - name: Print something
+        run: echo "Testing started"
