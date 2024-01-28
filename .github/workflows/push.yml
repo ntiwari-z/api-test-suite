@@ -40,7 +40,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     container:
-      image: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+      image: nikhilzh/api-test-suite:latest
       credentials:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
