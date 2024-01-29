@@ -43,9 +43,15 @@ jobs:
       TEST_ENVIRONMENT: Development
     container:
       image: nikhilzh/api-test-suite:latest
+      volumes:
+        - ${{ github.workspace }}:/app/publish
       credentials:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Restore
+        run: dotnet restore
       - name: Run Tests
-        run: dotnet test
+        run: dotnet test Tests.dll -e TEST_ENVIRONMENT=Development
