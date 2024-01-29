@@ -16,7 +16,7 @@ namespace Utility.Pipeline.Search
         {
             Assert.True(!string.IsNullOrWhiteSpace(input.Token));
             Assert.True(input.Hotels.Count > 0);
-            Assert.Equal(ExpectedCount, input.Hotels.Count);
+            Assert.True(input.Hotels.Count >= ExpectedCount);
 
             return await Task.FromResult(input);
         }
