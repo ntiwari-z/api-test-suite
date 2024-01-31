@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jan 31 13:47:18 GMT 2024","Wed Jan 31 13:47:25 GMT 2024","7337","","Smoke","","Tests.AvailabilityTest","SearchToBookSingleRoomFlow(locationId: ""357389"", locationName: ""Mumbai"", expectedCount: 1)","SearchToBookSingleRoomFlow",""
+"passed","Wed Jan 31 13:47:28 GMT 2024","Wed Jan 31 13:47:30 GMT 2024","1851","","Regression","","Tests.AvailabilityTest","SearchResults(locationId: ""357389"", locationName: ""Mumbai"", expectedCount: 1)","SearchResults",""
+"passed","Wed Jan 31 13:47:30 GMT 2024","Wed Jan 31 13:47:35 GMT 2024","4915","","Smoke","","Tests.AvailabilityTest","SearchToBookMultiRoomFlow(locationId: ""357389"", locationName: ""Mumbai"", expectedCount: 1)","SearchToBookMultiRoomFlow",""
+"passed","Wed Jan 31 13:47:25 GMT 2024","Wed Jan 31 13:47:28 GMT 2024","3100","","Regression","","Tests.AvailabilityTest","MultiAvailabilityCount(locationId: ""357389"", locationName: ""Mumbai"", expectedCount: 1)","MultiAvailabilityCount",""
