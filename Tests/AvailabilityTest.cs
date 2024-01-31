@@ -51,7 +51,7 @@ namespace Tests
             Assert.True(true);
         }
 
-        //[Theory(DisplayName = "SearchToBookMultiRoomFlow")]
+        [Theory(DisplayName = "SearchToBookMultiRoomFlow")]
         [MemberData(nameof(SearchData))]
         [Trait("TestCategory", "Smoke")]
         [AllureSuite("Smoke")]
@@ -91,7 +91,7 @@ namespace Tests
             return occupancies;
         }
 
-        //[Theory(DisplayName = "SearchResults")]
+        [Theory(DisplayName = "SearchResults")]
         [MemberData(nameof(SearchData))]
         [Trait("TestCategory", "Regression")]
         [AllureSuite("Regression")]
@@ -105,7 +105,7 @@ namespace Tests
             Assert.True(response.HotelCount >= expectedCount);
         }
 
-        //[Theory(DisplayName = "MultiAvailabilityCount")]
+        [Theory(DisplayName = "MultiAvailabilityCount")]
         [MemberData(nameof(SearchData))]
         [Trait("TestCategory", "Regression")]
         [AllureSuite("Regression")]
