@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jan 31 12:55:53 GMT 2024","Wed Jan 31 12:56:01 GMT 2024","7211","","Smoke","","Tests.AvailabilityTest","SearchToBookSingleRoomFlow(locationId: ""357389"", locationName: ""Mumbai"", expectedCount: 1)","SearchToBookSingleRoomFlow",""
